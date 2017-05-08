@@ -1,11 +1,5 @@
 package com.example.falcons.scarfs;
 
-/**
- * @author: Nick Forleo
- * Handles the GUI for "Create Schedule"
- * 4/27/2017 CSC305
- */
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,16 +9,22 @@ import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+
+/**
+ * @author: Nick Forleo
+ * Handles the GUI for "Create Schedule"
+ * 4/27/2017 CSC305
+ */
 public class create_schedule extends AppCompatActivity{
     /**
      * Table Layout to be used to add views programmatically
      */
-    TableLayout tl;
+    private TableLayout tl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_sched);
+        setContentView(R.layout.activity_create_schedule);
 
         //Find current layout so that Objects can be added to it later
         tl = (TableLayout) findViewById(R.id.table_layout);
